@@ -174,7 +174,7 @@ class _HomePageState extends State<HomePage> {
                         );
                       },
                       child: Padding(
-                        padding: const EdgeInsets.only(right: 40.0),
+                        padding: const EdgeInsets.only(right: 25.0),
                         child: Stack(
                           children: <Widget>[
                             _buildBackGround(index),
@@ -217,7 +217,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 40.0),
+                  padding: const EdgeInsets.only(left: 20.0),
                   child: Text(
                     'Popular',
                     style: TextStyle(
@@ -240,7 +240,7 @@ class _HomePageState extends State<HomePage> {
       margin: const EdgeInsets.only(
         top: 50.0,
         bottom: 20.0,
-        right: 50.0,
+        right: 40.0,
       ),
       padding: const EdgeInsets.all(24.0),
       decoration: BoxDecoration(
@@ -259,7 +259,7 @@ class _HomePageState extends State<HomePage> {
                 direction: Axis.horizontal,
                 allowHalfRating: true,
                 itemCount: 5,
-                itemSize: 12.0,
+                itemSize: 10.0,
                 unratedColor: Colors.black12,
                 itemPadding: EdgeInsets.symmetric(horizontal: 1.0),
                 itemBuilder: (context, _) => Icon(
@@ -282,7 +282,7 @@ class _HomePageState extends State<HomePage> {
           Text(
             '${foodList[index].name}',
             style: TextStyle(
-              fontSize: 20.0,
+              fontSize: 18.0,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -299,7 +299,7 @@ class _HomePageState extends State<HomePage> {
       itemCount: foodList.length,
       itemBuilder: (context, int index) {
         return Container(
-          padding: EdgeInsets.all(16.0),
+          padding: EdgeInsets.all(10.0),
           margin: const EdgeInsets.only(bottom: 16.0),
           decoration: BoxDecoration(
             color: Colors.grey.withOpacity(0.2),
@@ -314,7 +314,7 @@ class _HomePageState extends State<HomePage> {
                 foodList[index].imgPath,
                 width: 100.0,
               ),
-              const SizedBox(width: 16.0),
+              const SizedBox(width: 10.0),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
@@ -336,7 +336,7 @@ class _HomePageState extends State<HomePage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      const SizedBox(width: 16.0),
+                      const SizedBox(width: 10.0),
                       Text(
                         '(${foodList[index].weight.toInt()}gm Weight)',
                         style: TextStyle(

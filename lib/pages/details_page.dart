@@ -59,7 +59,7 @@ class _DetailsPageState extends State<DetailsPage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  const SizedBox(height: 10.0),
+                  const SizedBox(height: 5.0),
                   Row(
                     children: <Widget>[
                       Text(
@@ -74,7 +74,7 @@ class _DetailsPageState extends State<DetailsPage> {
                       _buildCounter(),
                     ],
                   ),
-                  const SizedBox(height: 10.0),
+                  const SizedBox(height: 5.0),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
@@ -86,7 +86,7 @@ class _DetailsPageState extends State<DetailsPage> {
                           'Protien', '${widget.foodModel.protein.toInt()}gm'),
                     ],
                   ),
-                  const SizedBox(height: 10.0),
+                  const SizedBox(height: 5.0),
                   Text(
                     'Items',
                     style: TextStyle(
@@ -94,7 +94,7 @@ class _DetailsPageState extends State<DetailsPage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  const SizedBox(height: 8.0),
+                  const SizedBox(height: 5.0),
                   Text('${widget.foodModel.item}'),
                   Expanded(child: SizedBox()),
                   Row(
